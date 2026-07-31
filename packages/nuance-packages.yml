@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/@nuance-mix/mix-cli
+description: >-
+  First-party Nuance developer libraries and tools. Verified against the public
+  npm registry (registry.npmjs.org) and the nuance-communications GitHub
+  organization at fetch time. Nuance Mix runtime services are gRPC/protobuf, so
+  client "SDKs" are the generated gRPC stubs published in Nuance's sample/client
+  repositories rather than a single packaged runtime SDK.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@nuance-mix/mix-cli"
+    url: https://www.npmjs.com/package/@nuance-mix/mix-cli
+    source: https://github.com/nuance-communications/mix-cli
+    install: npm install -g @nuance-mix/mix-cli
+    version: 2.6.3
+    description: Command line tool for the Nuance Mix V4 authoring API.
+    official: true
+  - language: swift
+    registry: github
+    name: Dragon-Medical-SpeechKit-iOS
+    url: https://github.com/nuance-communications/Dragon-Medical-SpeechKit-iOS
+    source: https://github.com/nuance-communications/Dragon-Medical-SpeechKit-iOS
+    description: Dragon Medical SpeechKit SDK for iOS (healthcare voice capture).
+    official: true
+  - language: python
+    registry: github
+    name: mix-quickstart-projects
+    url: https://github.com/nuance-communications/mix-quickstart-projects
+    source: https://github.com/nuance-communications/mix-quickstart-projects
+    description: >-
+      Nuance Mix QuickStart projects and gRPC runtime client samples (Python)
+      demonstrating ASRaaS/NLUaaS/DLGaaS/TTSaaS calls.
+    official: true
+notes: >-
+  No first-party package was found on PyPI, Maven Central, NuGet, RubyGems,
+  Packagist or crates.io for Nuance Mix runtime services; the PyPI project
+  named "nuance" is an unrelated astronomy library (author Lionel Garcia).

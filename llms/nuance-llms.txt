@@ -1,0 +1,26 @@
+# Nuance (Nuance Mix)
+
+> Nuance Communications (NASDAQ: NUAN, now part of Microsoft) is a conversational-AI and speech-recognition pioneer. Its developer platform, Nuance Mix, provides gRPC runtime services for speech recognition, natural language understanding, dialog, and text-to-speech, plus design-time tooling (Mix.nlu, Mix.dialog) and a first-party CLI. Runtime services authenticate with OAuth 2.0 client-credentials.
+
+## APIs
+
+- [Nuance Mix ASRaaS gRPC API](https://docs.nuance.com/mix/apis/asr-grpc/): Automatic Speech Recognition — stream speech to text in real time (Recognizer service).
+- [Nuance Mix NLUaaS gRPC API](https://docs.nuance.com/mix/apis/nlu-grpc/): Natural Language Understanding — interpret input against Mix.nlu models.
+- [Nuance Mix DLGaaS gRPC API](https://docs.nuance.com/mix/apis/dialog-grpc/): Dialog as a Service — execute Mix.dialog conversational flows.
+- [Nuance Mix TTSaaS gRPC API](https://docs.nuance.com/mix/apis/tts-grpc/): Text-to-Speech, including neural voices (Synthesizer service).
+- [Nuance Mix NRaaS gRPC API](https://docs.nuance.com/mix/apis/nr-grpc/): Grammar-based speech recognition.
+
+## Docs
+
+- [Nuance Mix Documentation](https://docs.nuance.com/mix/): Platform overview, tooling, and runtime guides.
+- [Mix API Reference](https://docs.nuance.com/mix/apis/): gRPC service references and setup.
+- [Developer Portal / Dashboard](https://mix.nuance.com): Create projects, models, and service credentials.
+
+## Tools
+
+- [Mix CLI (@nuance-mix/mix-cli)](https://www.npmjs.com/package/@nuance-mix/mix-cli): Command line tool for the Mix V4 authoring API.
+- [GitHub: nuance-communications](https://github.com/nuance-communications): mix-cli, Mix QuickStart projects, Dragon Medical SpeechKit iOS, samples.
+
+## Auth
+
+- OAuth 2.0 client-credentials grant; bearer access token on gRPC call metadata. Service credentials are created in the Mix dashboard.

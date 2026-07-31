@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nuance.com/mix/apis/
+docs: https://docs.nuance.com/mix/
+description: >-
+  Nuance Mix runtime services (ASRaaS, NLUaaS, DLGaaS, TTSaaS, NRaaS) and the
+  Mix V4 authoring API authenticate with OAuth 2.0 using the client-credentials
+  grant. Developers generate a service-credentials client (client id + secret)
+  in the Mix dashboard, exchange it for a short-lived bearer access token at the
+  Nuance authorization server, and present the token to the gRPC runtime over a
+  TLS-secured channel. Access is scoped per runtime service.
+summary:
+  types: [oauth2]
+  oauth2_flows: [clientCredentials]
+  transport: grpc-tls
+schemes:
+  - name: MixOAuth2
+    type: oauth2
+    flow: clientCredentials
+    grant: client_credentials
+    token_style: bearer
+    description: >-
+      OAuth 2.0 client-credentials grant. The access token is presented as a
+      Bearer credential on the gRPC call metadata; tokens are short-lived and
+      refreshed by the client. Service credentials are created and managed in
+      the Mix dashboard (mix.nuance.com).
+    scoped_services: [asr, nlu, dlg, tts, nr]
+    sources: [docs.nuance.com/mix]
+notes: >-
+  Scope tokens are assigned per runtime service in the Mix dashboard; exact
+  scope strings are managed there and were not captured verbatim (the docs are
+  a client-rendered SPA). See scopes handling in docs.nuance.com/mix/apis/.

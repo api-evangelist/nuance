@@ -1,22 +1,157 @@
 aid: nuance
 name: Nuance
-description: Nuance is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Nuance Communications (NASDAQ: NUAN) is a conversational-AI and
+  speech-recognition pioneer, acquired by Microsoft in 2022. Its self-service
+  developer platform, Nuance Mix, provides tooling and runtime services for
+  building conversational applications: Automatic Speech Recognition (ASRaaS),
+  Natural Language Understanding (NLUaaS), Dialog management (DLGaaS),
+  Text-to-Speech (TTSaaS) and grammar-based recognition (NRaaS) — all exposed as
+  gRPC/protobuf runtime services secured with OAuth 2.0 client-credentials.
+  Design-time tooling (Mix.nlu, Mix.dialog) and a first-party CLI (@nuance-mix/mix-cli)
+  round out the platform. Nuance also ships Dragon speech solutions, including
+  Dragon Medical SpeechKit for healthcare voice capture.
 url: https://raw.githubusercontent.com/api-evangelist/nuance/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://github.com/nuance-communications.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - mayfield
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-from-public-developer-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Speech Recognition
+- Conversational AI
+- Natural Language Understanding
+- Text to Speech
+- Speech Synthesis
+- Voice
+- Dialog
+- gRPC
+- Healthcare AI
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Nuance Mix ASRaaS gRPC API
+  description: >-
+    Automatic Speech Recognition as a Service — convert speech to text in real
+    time over a gRPC streaming API (Recognizer service), with wordsets, training
+    and ForgetMe operations. Secured with OAuth 2.0 client-credentials.
+  humanURL: https://docs.nuance.com/mix/apis/asr-grpc/
+  baseURL: https://mix.nuance.com
+  tags:
+  - Speech Recognition
+  - Speech to Text
+  - gRPC
+  properties:
+  - type: Documentation
+    url: https://docs.nuance.com/mix/apis/asr-grpc/
+- name: Nuance Mix NLUaaS gRPC API
+  description: >-
+    Natural Language Understanding as a Service — interpret user input against
+    NLU models built in Mix.nlu, over a gRPC Runtime service.
+  humanURL: https://docs.nuance.com/mix/apis/nlu-grpc/
+  baseURL: https://mix.nuance.com
+  tags:
+  - Natural Language Understanding
+  - NLU
+  - gRPC
+  properties:
+  - type: Documentation
+    url: https://docs.nuance.com/mix/apis/nlu-grpc/
+- name: Nuance Mix DLGaaS gRPC API
+  description: >-
+    Dialog as a Service — execute conversational dialog flows authored in
+    Mix.dialog over a gRPC Dialog service.
+  humanURL: https://docs.nuance.com/mix/apis/dialog-grpc/
+  baseURL: https://mix.nuance.com
+  tags:
+  - Conversational AI
+  - Dialog
+  - gRPC
+  properties:
+  - type: Documentation
+    url: https://docs.nuance.com/mix/apis/dialog-grpc/
+- name: Nuance Mix TTSaaS gRPC API
+  description: >-
+    Text-to-Speech as a Service — turn text into synthesized speech (including
+    neural voices) over a gRPC Synthesizer service.
+  humanURL: https://docs.nuance.com/mix/apis/tts-grpc/
+  baseURL: https://mix.nuance.com
+  tags:
+  - Text to Speech
+  - Speech Synthesis
+  - gRPC
+  properties:
+  - type: Documentation
+    url: https://docs.nuance.com/mix/apis/tts-grpc/
+- name: Nuance Mix NRaaS gRPC API
+  description: >-
+    Grammar-based recognition as a Service — grammar-driven speech recognition
+    over a gRPC runtime service.
+  humanURL: https://docs.nuance.com/mix/apis/nr-grpc/
+  baseURL: https://mix.nuance.com
+  tags:
+  - Speech Recognition
+  - Grammars
+  - gRPC
+  properties:
+  - type: Documentation
+    url: https://docs.nuance.com/mix/apis/nr-grpc/
+common:
+- type: DomainSecurity
+  url: security/nuance-domain-security.yml
+- type: Website
+  url: https://www.nuance.com
+- type: DeveloperPortal
+  url: https://mix.nuance.com
+- type: Documentation
+  url: https://docs.nuance.com/mix/
+- type: APIReference
+  url: https://docs.nuance.com/mix/apis/
+- type: GettingStarted
+  url: https://github.com/nuance-communications/mix-quickstart-projects
+- type: GitHubOrganization
+  url: https://github.com/nuance-communications
+- type: SignUp
+  url: https://mix.nuance.com
+- type: Authentication
+  url: authentication/nuance-authentication.yml
+- type: Packages
+  url: packages/nuance-packages.yml
+- type: SDKs
+  url: packages/nuance-packages.yml
+- type: CLI
+  url: cli/nuance-cli.yml
+- type: Conventions
+  url: conventions/nuance-conventions.yml
+- type: Conformance
+  url: conformance/nuance-conformance.yml
+- type: MCPServer
+  url: mcp/nuance-mcp.yml
+- type: LLMsTxt
+  url: llms/nuance-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

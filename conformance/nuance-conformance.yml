@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.nuance.com/mix/apis/
+description: >-
+  Cross-cutting standards posture for the Nuance Mix runtime services, derived
+  from the public Mix API documentation and the nuance-communications GitHub
+  organization. Nuance Mix runtime services are gRPC/protobuf secured with
+  OAuth 2.0.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: Mix runtime + authoring APIs use OAuth 2.0 client-credentials (docs.nuance.com/mix).
+  - id: grpc
+    conforms: true
+    evidence: ASRaaS/NLUaaS/DLGaaS/TTSaaS/NRaaS are gRPC services (docs.nuance.com/mix/apis).
+  - id: protobuf
+    conforms: true
+    evidence: Runtime services are defined by published .proto contracts (Recognizer/Runtime/Dialog/Synthesizer).
+  - id: http2
+    conforms: true
+    evidence: gRPC transport runs over HTTP/2 with TLS.
+  - id: openapi
+    conforms: false
+    evidence: No OpenAPI is published; the surface is gRPC-first.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Not applicable to gRPC status-based errors.
+notes: >-
+  No published third-party compliance certifications (SOC 2 / ISO 27001 / HIPAA
+  / HITRUST) were verified for the Mix developer platform via a live probe;
+  Nuance's healthcare products (Dragon Medical) are marketed as HIPAA-eligible,
+  but that claim was not confirmed here, so no `Compliance` pointer is emitted.

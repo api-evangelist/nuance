@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of provider hosts
+description: >-
+  Probed the /.well-known/ discovery surface on the Nuance hosts. www.nuance.com
+  returns HTTP 200 for every path but serves an HTML page (soft-404) rather than
+  a real discovery document, so none are genuine. mix.nuance.com returns true
+  404s. No usable well-known catalog, OIDC/OAuth metadata, or security.txt was
+  found; no WellKnown/SecurityTxt pointer is emitted.
+hosts:
+  - host: https://www.nuance.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        real: false
+        note: soft-404 (text/html marketing page)
+      - path: /.well-known/openid-configuration
+        status: 200
+        real: false
+        note: soft-404 (text/html)
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        real: false
+        note: soft-404 (text/html)
+      - path: /.well-known/api-catalog
+        status: 200
+        real: false
+        note: soft-404 (text/html)
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        real: false
+        note: soft-404 (text/html)
+  - host: https://mix.nuance.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404

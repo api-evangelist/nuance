@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/nuance-communications/mix-cli
+name: mix
+description: >-
+  The Nuance Mix CLI (@nuance-mix/mix-cli) is the first-party command line tool
+  for the Nuance Mix V4 authoring API — managing Mix projects, applications,
+  NLU/dialog models, data hosts, jobs and deployments outside the web console.
+package: "@nuance-mix/mix-cli"
+version: 2.6.3
+repository: https://github.com/nuance-communications/mix-cli
+install:
+  - method: npm
+    command: npm install -g @nuance-mix/mix-cli
+binary: mix
+authentication: >-
+  OAuth 2.0 client-credentials — configure a Mix service-credentials client id
+  and secret; the CLI acquires and caches a bearer token for the authoring API.
+command_groups:
+  - name: projects
+    summary: Create, list, export and manage Mix projects.
+  - name: applications
+    summary: Manage Mix applications and configurations.
+  - name: nlu
+    summary: Import/export and manage NLU model data.
+  - name: dialog
+    summary: Manage dialog designs and data.
+  - name: jobs
+    summary: Track import/export/build jobs.
+  - name: deployments
+    summary: Manage application deployment flows and environments.
+notes: >-
+  Command groups reflect the Mix V4 authoring resource surface documented in the
+  mix-cli repository; run `mix --help` for the authoritative, versioned list.

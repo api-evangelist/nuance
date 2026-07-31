@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nuance.com/mix/apis/
+docs: https://docs.nuance.com/mix/apis/grpc-setup/
+description: >-
+  Cross-cutting request/response semantics for the Nuance Mix runtime services.
+  Derived from the public Mix API documentation; runtime services are gRPC, so
+  conventions are protobuf/gRPC-native rather than REST/JSON.
+transport:
+  protocol: grpc
+  encoding: protobuf
+  channel_security: TLS
+  note: >-
+    Each runtime service (ASRaaS Recognizer, NLUaaS Runtime, DLGaaS Dialog,
+    TTSaaS Synthesizer, NRaaS) is a gRPC service defined by a published .proto;
+    streaming RPCs are used for real-time ASR and TTS.
+authentication:
+  style: oauth2-client-credentials
+  ref: authentication/nuance-authentication.yml
+  detail: Bearer access token supplied on gRPC call metadata.
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key contract is documented for the Mix runtime services;
+    ASR/TTS are streaming and NLU/DLG requests are stateless per call.
+pagination:
+  supported: false
+  note: Runtime services are per-utterance/per-turn; the authoring API paginates job/project lists.
+versioning:
+  scheme: uri-path
+  runtime: v3
+  authoring: v4
+  note: >-
+    Mix runtime gRPC services are versioned in the service path; the authoring
+    API used by mix-cli is the Mix V4 API.
+error_handling:
+  style: grpc-status
+  ref: conformance/nuance-conformance.yml
+  note: Errors surface as gRPC status codes plus service-specific detail messages.
+cross_links:
+  authentication: authentication/nuance-authentication.yml
+  conformance: conformance/nuance-conformance.yml
+  packages: packages/nuance-packages.yml
