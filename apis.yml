@@ -39,6 +39,17 @@ tags:
 - Speech Recognition
 - Conversational AI
 - Natural Language Understanding
+- Text-to-Speech
+- Speech Synthesis
+- Voice
+- Dialog
+- gRPC
+- Healthcare AI
+tags_raw:
+- Company
+- Speech Recognition
+- Conversational AI
+- Natural Language Understanding
 - Text to Speech
 - Speech Synthesis
 - Voice
@@ -59,6 +70,10 @@ apis:
   humanURL: https://docs.nuance.com/mix/apis/asr-grpc/
   baseURL: https://mix.nuance.com
   tags:
+  - Speech Recognition
+  - Speech-to-Text
+  - gRPC
+  tags_raw:
   - Speech Recognition
   - Speech to Text
   - gRPC
@@ -98,6 +113,10 @@ apis:
   humanURL: https://docs.nuance.com/mix/apis/tts-grpc/
   baseURL: https://mix.nuance.com
   tags:
+  - Text-to-Speech
+  - Speech Synthesis
+  - gRPC
+  tags_raw:
   - Text to Speech
   - Speech Synthesis
   - gRPC
