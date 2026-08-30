@@ -50,7 +50,7 @@ tags:
 - Speech Recognition
 - Conversational AI
 - Natural Language Understanding
-- Text-to-Speech
+- Text to Speech
 - Speech Synthesis
 - Voice
 - Dialog
@@ -124,7 +124,7 @@ apis:
   humanURL: https://docs.nuance.com/mix/apis/tts-grpc/
   baseURL: https://mix.nuance.com
   tags:
-  - Text-to-Speech
+  - Text to Speech
   - Speech Synthesis
   - gRPC
   tags_raw:
@@ -148,6 +148,11 @@ apis:
   - type: Documentation
     url: https://docs.nuance.com/mix/apis/nr-grpc/
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/microsoft/
+  name: Microsoft
+  x-relationship: acquired
+  x-evidence: "Nuance Communications (NASDAQ: NUAN) is a conversational-AI and speech-recognition pioneer, acquired by Microsoft in 2022."
 - type: DomainSecurity
   url: security/nuance-domain-security.yml
 - type: Website
