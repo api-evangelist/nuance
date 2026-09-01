@@ -50,7 +50,7 @@ tags:
 - Speech Recognition
 - Conversational AI
 - Natural Language Understanding
-- Text to Speech
+- Text-to-Speech
 - Speech Synthesis
 - Voice
 - Dialog
@@ -124,7 +124,7 @@ apis:
   humanURL: https://docs.nuance.com/mix/apis/tts-grpc/
   baseURL: https://mix.nuance.com
   tags:
-  - Text to Speech
+  - Text-to-Speech
   - Speech Synthesis
   - gRPC
   tags_raw:
