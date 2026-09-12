@@ -1,5 +1,6 @@
 aid: nuance
 name: Nuance
+x-parent: microsoft
 description: >-
   Nuance Communications (NASDAQ: NUAN) is a conversational-AI and
   speech-recognition pioneer, acquired by Microsoft in 2022. Its self-service
@@ -11,7 +12,7 @@ description: >-
   Design-time tooling (Mix.nlu, Mix.dialog) and a first-party CLI (@nuance-mix/mix-cli)
   round out the platform. Nuance also ships Dragon speech solutions, including
   Dragon Medical SpeechKit for healthcare voice capture.
-url: https://raw.githubusercontent.com/api-evangelist/nuance/refs/heads/main/apis.yml
+url: https://www.nuance.com
 deliveryModel:
   model: saas
   open_source: false
