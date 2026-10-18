@@ -100,6 +100,9 @@ apis:
   baseURL: https://mix.nuance.com
   tags:
   - Natural Language Understanding
+  - gRPC
+  tags_raw:
+  - Natural Language Understanding
   - NLU
   - gRPC
   properties:
