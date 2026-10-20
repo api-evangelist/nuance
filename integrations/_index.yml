@@ -15,6 +15,37 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: nuance-npm-registry
+  label: npm registry
+  partner: npm
+  partner_name: npm registry
+  category: official SDK (JavaScript/TypeScript)
+  type: register
+  channel: package-registry
+  evidence: https://www.npmjs.com/package/@nuance-mix/mix-cli
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@nuance-mix/mix-cli'
+      version: 2.6.3
+      released: '2024-11-08'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@nuance-mix/mix-cli
+      repo_leg: github-org:nuance-communications
+      publisher_leg: email:nuance.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
 - slug: nuance-fedramp
   label: FedRAMP
   partner_name: FedRAMP
@@ -54,34 +85,47 @@
       latest_authorization: '2021-05-06'
   status: not-a-workflow
   arazzo: null
-- slug: nuance-npm-registry
-  label: npm registry
-  partner: npm
-  partner_name: npm registry
-  category: official SDK (JavaScript/TypeScript)
+- slug: nuance-ihe-international-connectathon
+  label: IHE International (Connectathon)
+  partner_name: IHE International (Connectathon)
+  category: IHE Connectathon tested integration profiles
   type: register
-  channel: package-registry
-  evidence: https://www.npmjs.com/package/@nuance-mix/mix-cli
+  channel: standard-directory
+  evidence: https://connectathon-results.ihe.net/company-details?companykeyw=Nuance
   source: edge
-  relationship: distribution-channel
+  relationship: standard-participant
   contract_reference:
-    register: npm registry (public registry JSON)
+    register: IHE Connectathon Global Results (connectathon-results.ihe.net, custom search table)
+    standard: IHE integration profiles (IHE Technical Frameworks)
     spec_file: null
-    language: JavaScript/TypeScript
-    packages:
-    - name: '@nuance-mix/mix-cli'
-      version: 2.6.3
-      released: '2024-11-08'
-      released_field: modified
-      lapsed: false
-      page: https://www.npmjs.com/package/@nuance-mix/mix-cli
-      repo_leg: github-org:nuance-communications
-      publisher_leg: email:nuance.com
-      matched_by: domain
-    current: true
-    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
-      24 months'
-    detected_by: sweep-official-sdks.py
-    detected: '2026-10-18'
+    role: ihe-connectathon-tested-vendor
+    registered_name: Nuance Communications
+    register_id: Nuance
+    matched_domain: nuance.com
+    matched_by: domain
+    first_connectathon: 2013
+    latest_connectathon: 2013
+    editions_sample:
+    - North America 2013
+    - Europe 2013
+    certified_products:
+    - product: IHE Connectathon tested profiles (IT Infrastructure)
+      ihe_domain: IT Infrastructure
+      latest_connectathon: 2013
+      lapsed: true
+      profiles_sample:
+      - ATNA
+      - CT
+      - PDQ
+      - XDR
+      - XDS-SD
+      - XDS.b
+    signal_note: certified_products = one entry per IHE DOMAIN with tested profiles, never per profile, actor or
+      year; lapsed when the domain's latest Connectathon is older than three years (< 2023). Profiles, actors and
+      editions are context, never counted
+    detected_by: sweep-medical-imaging-ihe.py
+    detected: '2026-10-20'
+    identity: wikidata Q1137289 'Nuance Communications' P856 http://www.nuance.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null
