@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Nuance is a company surfaced as a portfolio company of mayfield and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Nuance Communications (NASDAQ: NUAN) is a conversational-AI and speech-recognition pioneer, acquired by Microsoft in 2022. Its self-service developer platform, Nuance Mix, provides tooling and runtime services for building conversational applications: Automatic Speech Recognition (ASRaaS), Natural Language Understanding (NLUaaS), Dialog management (DLGaaS), Text-to-Speech (TTSaaS) and grammar-based recognition (NRaaS) — all exposed as gRPC/protobuf runtime services secured with OAuth 2.0 client-credentials. Design-time tooling (Mix.nlu, Mix.dialog) and a first-party CLI (@nuance-mix/mix-cli) round out the platform. Nuance also ships Dragon speech solutions, including Dragon Medical SpeechKit for healthcare voice capture.
 
-Backed by: mayfield
+**Areas:** Company · Speech Recognition · Conversational AI · Natural Language Understanding · Text-to-Speech · Speech Synthesis · Voice · Dialog · gRPC · Healthcare AI
+
+## Nuance on APIs.io
+
+Everything profiled for Nuance is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nuance/](https://apis.io/providers/nuance/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Nuance Mix ASRaaS gRPC API](https://apis.io/apis/nuance/nuance-mix-asraas-grpc-api/) — Automatic Speech Recognition as a Service — convert speech to text in real time over a gRPC streaming API (Recognizer service), with wordsets, training and…
+- [Nuance Mix NLUaaS gRPC API](https://apis.io/apis/nuance/nuance-mix-nluaas-grpc-api/) — Natural Language Understanding as a Service — interpret user input against NLU models built in Mix.nlu, over a gRPC Runtime service.
+- [Nuance Mix DLGaaS gRPC API](https://apis.io/apis/nuance/nuance-mix-dlgaas-grpc-api/) — Dialog as a Service — execute conversational dialog flows authored in Mix.dialog over a gRPC Dialog service.
+- [Nuance Mix TTSaaS gRPC API](https://apis.io/apis/nuance/nuance-mix-ttsaas-grpc-api/) — Text-to-Speech as a Service — turn text into synthesized speech (including neural voices) over a gRPC Synthesizer service.
+- [Nuance Mix NRaaS gRPC API](https://apis.io/apis/nuance/nuance-mix-nraas-grpc-api/) — Grammar-based recognition as a Service — grammar-driven speech recognition over a gRPC runtime service.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [nuance-mix](https://apis.io/servers/nuance/nuance-mix/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Nuance Authentication](https://apis.io/security/nuance/nuance-authentication/)
+- [Nuance Domain Security](https://apis.io/security/nuance/nuance-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.nuance.com)
+- [Documentation](https://docs.nuance.com/mix/)
+- [Getting started](https://github.com/nuance-communications/mix-quickstart-projects)
+- [API reference](https://docs.nuance.com/mix/apis/)
+- [Sign up](https://mix.nuance.com)
+- [GitHub](https://github.com/nuance-communications)
+
+## API Evangelist rating
+
+**Kin Score 25.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 85.7 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 13.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.3** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nuance/](https://apis.io/providers/nuance/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Nuance: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/nuance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
